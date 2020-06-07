@@ -13,7 +13,7 @@
     $sql = "select * from Artists order by LastName";
     $result = $pdo->query($sql);
     ```
-    设置查询，返回结果集。  ![屏幕截图_23_](./images/屏幕截图(23)_1.png)
+    设置查询，返回结果集。  ![屏幕截图_23_](images/屏幕截图(23)_1.png)
     ``` 
     while ($row = $result->fetch()) {
             echo $row['ArtistID'] . " - " . $row['LastName'] . "<br/>";
@@ -56,7 +56,7 @@
   mysqli_close($connection);
   ```
   断开数据库连接。
-  ![屏幕截图_24_](./images/屏幕截图(24)_1.png)
+  ![屏幕截图_24_](images/屏幕截图(24)_1.png)
 ##exercise8
 + outputArtists()
    通过PDO连接Artists数据库，获得30行数据，在循环中将每一行的LastName在a标签中输出，并设置a标签的各项属性，通过if判断改变其class属性。最后释放资源，断开数据库连接。
@@ -64,7 +64,7 @@
    同样通过PDO连接Paintings数据库，通过点击获得的id定位得到数据，进入循环，执行outputSinglePainting方法，最后释放资源，断开数据库连接。
 + outputSinglePainting($row)
    此方法通过获得的$row，定位url输出照片，标题以及介绍，
-   ![屏幕截图_26_](./images/屏幕截图(26)_1.png)
+   ![屏幕截图_26_](images/屏幕截图(26)_1.png)
  
 
 ##exercise9
@@ -90,4 +90,4 @@
 + function constructGenreLink($id, $label) 
  
   输出链接a,链接另一个页面genre.php。 
-  ![屏幕截图_27_](./images/屏幕截图(27)_1.png)
+  ![屏幕截图_27_](images/屏幕截图(27)_1.png)
